@@ -1,12 +1,18 @@
 const container = document.getElementById("container");
+let gridCount = 16;
+// gridCount will be changed to user input
 
-for (let i = 0; i < 16; i++){
-    const newDiv = document.createElement("div");
-    //newDiv.style.flex = "auto";
-    //newDiv.style.flexBasis = "auto";
-    newDiv.setAttribute("style", "border: 1px solid coral; background-color: white;");
-    newDiv.textContent = "hi";
-    container.append(newDiv);
+function createDivs(){
+    for (let i = 0; i < gridCount; i++){
+        const newDiv = document.createElement("div");
+        //newDiv.style.flex = "auto";
+        //newDiv.style.flexBasis = "auto";
+        newDiv.textContent = "hi";
+        newDiv.classList.add("square");
+        container.append(newDiv);
+    }
+
+    document.body.appendChild(container);
 }
 
-document.body.appendChild(container);
+createDivs();
