@@ -1,8 +1,8 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-color: lightgray;
 }
 
@@ -23,8 +23,8 @@ body {
 }
 
 .square {
-    border: 1px solid coral; 
-    background-color: white;
-    width: auto;
-    height: auto;
+    box-sizing:border-box;
+    border: 1px solid white;
+    background-color: coral;
+    /* flex-basis: 33.33%; /* this is changed based on the user input*/
 }

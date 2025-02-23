@@ -9,6 +9,7 @@ function createDivs(){
         //newDiv.style.flexBasis = "auto";
         newDiv.textContent = "hi";
         newDiv.classList.add("square");
+        newDiv.style.flexBasis = "25%";
         container.append(newDiv);
     }
 
