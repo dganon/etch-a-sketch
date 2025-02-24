@@ -3,7 +3,6 @@ let userInput = 16;
 let gridCount = userInput * userInput;
 //let flexBas = Math.round((100/input) * 10) / 10; // rounds to nearest tenth
 let flexBas = 100/userInput;
-// console.log(flexBas);
 
 let submitBtn = document.querySelector("button");
 let textField = document.getElementById("gridSize");
@@ -33,7 +32,7 @@ function createDivs(){
         container.append(newDiv);
 
         newDiv.addEventListener ("mouseover", (event) => {
-            event.target.style.backgroundColor = "plum";
+            event.target.style.backgroundColor = "coral";
         });
     }
 
