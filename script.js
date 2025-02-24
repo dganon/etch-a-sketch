@@ -36,7 +36,7 @@ function createDivs(){
         container.append(newDiv);
 
         newDiv.addEventListener ("mouseover", (event) => {
-            event.target.style.backgroundColor = "coral";
+            event.target.style.backgroundColor = "#" + randomColor();
         });
     }
 
@@ -45,6 +45,11 @@ function createDivs(){
 
 function removeDiv(){
     container.replaceChildren();
+}
+
+function randomColor() {
+    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+    return randomColor;
 }
 
 

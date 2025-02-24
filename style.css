@@ -7,6 +7,10 @@ body {
     background-color: lavender;
 }
 
+h1 {
+    color: plum;
+}
+
 #header {
     text-align: center;
     padding: 10px;
@@ -35,8 +39,8 @@ body {
 
 .square {
     box-sizing:border-box;
-    border: 1px solid white;
-    background-color: plum;
+    border: .5px solid rgb(233, 233, 233);
+    background-color: white;
 }
 
 button {
