@@ -5,6 +5,18 @@ const gridCount = input * input;
 let flexBas = 100/input;
 // console.log(flexBas);
 
+let submitBtn = document.querySelector("button");
+let textField = document.getElementById("gridSize");
+let userInput;
+
+submitBtn.addEventListener("click", function(event){
+    event.preventDefault();
+    userInput = textField.value;
+    console.log(userInput);
+});
+
+createDivs();
+
 function createDivs(){
     for (let i = 0; i < gridCount; i++){
         const newDiv = document.createElement("div");
@@ -23,5 +35,7 @@ function createDivs(){
     document.body.appendChild(container);
 }
 
-createDivs();
+
+
+
  
