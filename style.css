@@ -26,5 +26,5 @@ body {
     box-sizing:border-box;
     border: 1px solid white;
     background-color: coral;
-    /* flex-basis: 33.33%; /* this is changed based on the user input*/
+    /* flex-basis: 33.33%; /* this is changed based on the user input*/ 
 }
