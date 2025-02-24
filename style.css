@@ -37,16 +37,22 @@ body {
     box-sizing:border-box;
     border: 1px solid white;
     background-color: plum;
-    /* flex-basis: 33.33%; /* this is changed based on the user input*/ 
 }
 
 button {
     border: 0;
-    background-color: coral;
     padding: 8px;
 }
 
-button:hover {
+#submitBtn:hover, #resetBtn:hover {
+    background-color: thistle;
+}
+
+#submitBtn {
+    background-color: coral;
+}
+
+#resetBtn {
     background-color: plum;
 }
 

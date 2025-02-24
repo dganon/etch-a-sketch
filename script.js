@@ -1,10 +1,10 @@
 const container = document.getElementById("container");
 let userInput = 16;
 let gridCount = userInput * userInput;
-//let flexBas = Math.round((100/input) * 10) / 10; // rounds to nearest tenth
 let flexBas = 100/userInput;
 
-let submitBtn = document.querySelector("button");
+let submitBtn = document.getElementById("submitBtn");
+let resetBtn = document.getElementById("resetBtn");
 let textField = document.getElementById("gridSize");
 
 submitBtn.addEventListener("click", function(event){
@@ -20,6 +20,10 @@ submitBtn.addEventListener("click", function(event){
     else{
         alert("please choose a number between 1-100.");
     }
+});
+
+resetBtn.addEventListener("click", function(event){
+    removeDiv();
 });
 
 createDivs();
@@ -40,7 +44,7 @@ function createDivs(){
 }
 
 function removeDiv(){
-
+    container.replaceChildren();
 }
 
 
